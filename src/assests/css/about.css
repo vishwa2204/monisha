@@ -1,0 +1,593 @@
+.about-banner{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.about-banner-images{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    position: relative;
+}
+
+.about-banner-images::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.about-banner-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white);
+}
+
+          
+.aboutNav{
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+    bottom: 0;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light);
+    gap: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.aboutNav span{
+    color: var(--color) !important;
+    font-weight: 900;
+}
+
+.aboutNav .some{
+    color: var(--color);
+    font-weight: 900;
+}
+
+/* About banner End  */
+
+/* About Section Start  */
+
+.about-section-content p b{
+    color: var(--color);
+}
+
+.about-section{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 5%;
+    padding: 2%;
+
+
+}
+
+.about-section::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/png/2.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.15;
+}
+
+.about-page-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.about-page-container .about-section-content{
+    width: 47%;
+    height: auto;
+}
+
+.about-section-content span{
+    color: var(--color);
+    font-weight: 700;
+}
+
+.about-section-content h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-section-content p{
+    font-weight: 500;
+    color: gray;
+}
+.about-section-images{
+    width: 47%;
+    height: auto;
+    position: relative;
+}
+
+.about-section-images .about-img1{
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-right-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    object-fit: cover;
+}
+
+.about-section-images .about-img2{
+    width: 50%;
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    border: 5px solid var(--light);
+    left: 0;
+    border-top-right-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-sec-exp{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #000;
+    border: 2px solid var(--color);
+}
+
+.about-sec-exp h2{
+    color: var(--light);
+}
+
+.about-sec-exp span{
+    color: var(--color);
+}
+
+
+@media screen and (max-width:768px) {
+    
+.about-page-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-page-container .about-section-content{
+    width: 100%;
+    height: auto;
+}
+
+.about-section-images{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.about-section-images .about-img1{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    border-top-right-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    object-fit: cover;
+}
+
+
+.about-sec-exp{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--gray);
+    border: 2px solid var(--color);
+}
+
+
+}
+
+@media screen and (max-width:800px){
+    .about-section-images .about-img2{
+        display: none;
+     }
+     .about-section-images .about-img1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        border-top-right-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        object-fit: cover;
+    }
+    
+}
+
+@media screen and (min-width:769px) {
+    
+.about-section-content h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-section-content h4{
+    font-size: 18px;
+}
+
+}
+/* About section end  */
+
+/* about-mini-content */
+
+.about-mini-content{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 5%;
+    background-image: url(../images/monisha/11.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-mini-content::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.about-mini-container {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    position: relative;
+}
+
+.about-project-title span{
+    color: var(--color);
+    font-weight: 700;
+}
+
+.about-project-title h2{
+    font-weight: 900;
+}
+
+
+.about-content-box{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.about-content-box h2{
+    color: var(--color);
+}
+
+
+.about-content-box p{
+    color: var(--light);
+    margin-bottom: 3%;
+}
+
+.about-content-box .about-connect{
+    width: auto;
+    padding: 2%;
+    background-color: var(--color);
+    color: var(--light);
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+/* about-project-section  */
+
+.about-project-section{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.about-project-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.about-project-container .about-project-title{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+.about-project-container .about-project-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-project-background{
+    width: 40%;
+    height: auto;
+    background-image: url(../images/monisha/service/bathroom.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-contact{
+    width: 80%;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    background-color: #000;
+    border: 3px solid var(--color);
+    border-top: none;
+    border-right: none;
+}
+
+.about-project-contact p{
+    color: var(--light);
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.about-project-contact .about-call{
+    font-size: 40px;
+    color: var(--color);
+    margin-bottom: 5%;
+}
+
+.about-project-contact h5{
+    padding-left: 3%;
+    border-left: 3px solid var(--color);
+    color: var(--color);
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.about-project-contact a{
+    color: var(--white);
+    font-weight: 700;
+}
+
+.about-project-images{
+    width: 60%;
+    height: auto;
+}
+
+.about-images-contain{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+
+}
+
+.about-images-contain img{
+    width: 25%;
+    height: 200px;
+    background-color: #000;
+}
+
+.about-images-contain img:hover{
+    opacity: 0.4;
+}
+
+.about-mission-vision{
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.about-mission-vision h2{
+    color: var(--color);
+    font-weight: 900;
+}
+
+.about-mission-vision h3{
+    color: #000;
+    font-weight: 900;
+}
+
+.about-mission-vision p{
+    color: gray;
+}
+
+.about-mission-vision .about-mission-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-mission-vision .about-mission-container .about-mission-boxs{
+    width: 47%;
+    height: auto;
+}
+
+.about-mission-vision .about-mission-container .about-mission-boxs .about-mis-icon{
+    font-size: 40px;
+    margin-bottom: 3%;
+    color: var(--color);
+}
+
+.about-mission-vision .about-mission-container .about-mission-boxs h3{
+    color: #000;
+    font-family: 900; 
+}
+
+.about-mission-vision .about-mission-container .about-mission-boxs p{
+    color: gray;
+    font-family: 700 !important;
+}
+
+@media screen and (max-width:425px) {
+    .about-project-container .about-project-content{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .about-project-background{
+        width: 100%;
+        height: auto;
+        background-image: url(../images/monisha/service/bathroom.jpg);
+        background-size: cover;
+        position: relative;
+    }
+    
+    .about-project-contact{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+        background-color: #000;
+        border: 3px solid var(--color);
+        border-top: none;
+        border-right: none;
+    }
+    .about-project-images{
+        width: 100%;
+        height: auto;
+    }
+    
+    .about-images-contain{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    
+    }
+    
+    .about-images-contain img{
+        width: 50%;
+        height: 200px;
+        background-color: #000;
+    }
+    .about-mission-vision .about-mission-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .about-mission-vision .about-mission-container .about-mission-boxs{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+}
+
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    .about-project-container .about-project-content{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .about-project-background{
+        width: 100%;
+        height: auto;
+        background-image: url(../images/monisha/service/bathroom.jpg);
+        background-size: cover;
+        position: relative;
+    }
+    
+    .about-project-contact{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+        background-color: #000;
+        border: 3px solid var(--color);
+        border-top: none;
+        border-right: none;
+    }
+    .about-project-images{
+        width: 100%;
+        height: auto;
+    }
+    
+    .about-images-contain{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    
+    }
+}
